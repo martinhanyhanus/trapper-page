@@ -44,6 +44,7 @@ class Article {
 
 		if(this.image != "") {
 			const image = document.createElement("img");
+			image.className = "article-image";
 			image.src = this.image;
 			image.alt = this.title + " image";
 			wrapper.appendChild(image);
@@ -62,5 +63,5 @@ articles.push(new Article("Díkuvzdání", "Edík", "Díkuvzdání bylo, byl sn�
 
 
 articles.forEach(function (article) {
-	document.getElementById("content").appendChild(article.articleElement);
+	document.getElementById("articles").appendChild(article.articleElement);
 });

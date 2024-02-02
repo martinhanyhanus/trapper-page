@@ -72,7 +72,25 @@ body {
 }
 
 .article-image {
-	max-width: 100%;
+	max-width: 50%;
+}
+
+.article-text {
+	width: 50%;
+}
+
+.article > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#articles > .article {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+#articles > .article:not(:last-child) {
+	border-bottom: dashed 1px #000;
 }
 
 /* DEBUG */

@@ -65,6 +65,10 @@ articles.push(new Article("Kremže", "Tandem", "Křemže byla. Trvala pár dní 
 articles.push(new Article("Halloween", "Edík", "Halloween byl, byly nějaké masky a dlouhá valná hromada.", "", 10));
 articles.push(new Article("Díkuvzdání", "Edík", "Díkuvzdání bylo, byl sníh a hodně jídla.", "https://www.beavercity.cz/images/DSC_6904_1.jpg", 20));
 
+articles.push(new Article("Kremže - copy", "Tandem", "Křemže byla. Trvala pár dní a něco se tam dělalo.", "assets/images/trappers-corral-logo-transparent.png"));
+articles.push(new Article("Halloween - copy", "Edík", "Halloween byl, byly nějaké masky a dlouhá valná hromada.", "", 10));
+articles.push(new Article("Díkuvzdání - copy", "Edík", "Díkuvzdání bylo, byl sníh a hodně jídla.", "assets/images/placeholder_top_background.jpg", 20));
+
 articles.forEach(function (article) {
 	document.getElementById("articles").appendChild(article.articleElement);
 });

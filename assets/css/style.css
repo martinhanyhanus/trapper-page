@@ -15,26 +15,26 @@ body {
 	margin-right: auto;
 }
 
-@media (min-width: 640px) {
+@media only screen and (min-width: 640px) {
 	.container {
 		max-width: 580px;
 		/* TODO hamburger */
 	}
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	.container {
 		max-width: 708px;
 	}
 }
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 	.container {
 		max-width: 964px;
 	}
 }
 
-@media (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
 	.container {
 		max-width: 1220px;
 	}

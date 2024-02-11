@@ -15,12 +15,21 @@
 <body>
 	<nav>
 		<div id="nav-bar" class="container">
-			<div id="nav-logo">Some logo</div>
-			<div class="nav-links">
-				<a href="#articles">Články</a>
-				<a>placeholder</a>
-				<a>placeholder</a>
-				<a>placeholder</a>
+			<div>Some logo</div>
+			<div id="nav-links">
+				<a href="javascript:void(0);" class="icon" onclick="showBurger()">
+					<svg id="burger" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier">
+							<path d="M4 18L20 18" stroke="#e0ee18" stroke-width="2" stroke-linecap="round"></path>
+							<path d="M4 12L20 12" stroke="#e0ee18" stroke-width="2" stroke-linecap="round"></path>
+							<path d="M4 6L20 6" stroke="#e0ee18" stroke-width="2" stroke-linecap="round"></path>
+						</g>
+					</svg>
+				</a>
+				<div id="nav-links-mobile"></div>
+				<div id="nav-links-desktop"></div>
 			</div>
 		</div>
 	</nav>
@@ -39,6 +48,7 @@
 	<div id="footer"></div>
 
 	<script src="assets/scripts/article_test.js"></script>
+	<script src="assets/scripts/utils.js"></script>
 </body>
 
 </html>

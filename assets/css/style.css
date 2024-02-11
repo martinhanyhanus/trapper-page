@@ -2,6 +2,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+* {
+	max-width: 100%;
+}
+
 body {
 	margin: 0;
 	background-image: url("../images/placeholder_background.jpg");
@@ -13,31 +17,6 @@ body {
 	max-width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-@media only screen and (min-width: 640px) {
-	.container {
-		max-width: 580px;
-		/* TODO hamburger */
-	}
-}
-
-@media only screen and (min-width: 768px) {
-	.container {
-		max-width: 708px;
-	}
-}
-
-@media only screen and (min-width: 1024px) {
-	.container {
-		max-width: 964px;
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	.container {
-		max-width: 1220px;
-	}
 }
 
 nav {
@@ -59,19 +38,27 @@ nav {
 	width: 100%;
 }
 
-.nav-links {
+#nav-links-desktop {
 	text-align-last: right;
 	font-size: 1.5em;
 }
 
-.nav-links > a {
-	color: inherit;
-	text-decoration: none;
-	/*display: inline-block;*/
+#nav-links-desktop, #nav-links-mobile {
+	display: none;
 }
 
-.nav-links > a:not(:first-child) {
+#nav-links-desktop > a, #nav-links-mobile > a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#nav-links-desktop > a:not(:first-child) {
 	padding-left: 15px;
+}
+
+#burger {
+	height: 2em;
+	max-height: 100%;
 }
 
 #top-img {
@@ -91,16 +78,7 @@ nav {
 }
 
 .article-image {
-	max-width: 50%;
-}
-
-.article-text {
-	width: 50%;
-}
-
-.article > * {
-	display: inline-block;
-	vertical-align: middle;
+	padding-top: 1em;
 }
 
 #articles > .article {
@@ -114,6 +92,58 @@ nav {
 
 .linkable {
 	scroll-margin-top: 3em;
+}
+
+/* Mobile view */
+@media only screen and (min-width: 640px) {
+	.container {
+		max-width: 580px;
+	}
+
+	.article-image {
+		max-width: 50%;
+		padding-top: 0;
+	}
+
+	.article-text {
+		width: 50%;
+	}
+
+	.article > * {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	#burger {
+		display: none;
+	}
+
+	#nav-links-desktop {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	#nav-links-mobile {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.container {
+		max-width: 708px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.container {
+		max-width: 964px;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.container {
+		max-width: 1220px;
+	}
 }
 
 /* TODO dark mode */
